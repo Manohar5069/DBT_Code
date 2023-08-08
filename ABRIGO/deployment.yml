@@ -6,13 +6,15 @@ jobs:
    schedule: 0 12 * * * 
    steps:
      - name: run models
-       command: dbt run --select customer_data
+       command: dbt run -m customer_data
      - name: run models
-       command: dbt run --select sample_data
-     - name: run models
-       command: dbt run --select author_data
+       command: dbt run -m sample_data
      - name: run macros
-       command: dbt run-operation apply_masking_policy 
+       command: dbt run-operation apply_masking_policy
+
+    
+    
+
   
   
 
