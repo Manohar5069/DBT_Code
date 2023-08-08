@@ -4,7 +4,7 @@ WITH CUSTOMER_DATA AS (
     SELECT
         *
     FROM
-        "DEMO_DB"."GOOGLE_SHEETS"."CUSTOMER_DATA"
+        {{source('poc','customer_data')}}
 )
 SELECT
     ID AS CUSTOMER_ID,
