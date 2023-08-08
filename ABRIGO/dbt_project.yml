@@ -39,5 +39,5 @@ models:
   #      use_force_applying_masking_policy: "TRUE"  
   # pre-hook: 
   #     - "{{ dbt_snow_mask.create_masking_policy() }}"
-  post-hook: 
-      - "{{apply_masking_policy() }}"
+  # post-hook: 
+  #     - "{{apply_masking_policy() }}"
