@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: poc
+    database: demo_db
+    schema: google_sheets
+    tables:
+      - name: customer_data
