@@ -2,7 +2,8 @@ version: 2
 
 sources:
   - name: poc
-    database: demo_db
-    schema: google_sheets
+    database: raw_database
+    schema: raw_sh
     tables:
       - name: customer_data
+      - name: sample_data
