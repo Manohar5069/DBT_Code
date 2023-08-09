@@ -4,7 +4,7 @@ WITH SAMPLE_DATA AS (
     SELECT
         *
     FROM
-        "DBT_DB"."RAW1_SH"."SAMPLE_DATA"
+        {{source('poc','sample_data')}}
 )
 SELECT
     CUSTOMER_ID,
