@@ -1,0 +1,20 @@
+dbtVersion: 1.5.1
+jobs:
+
+ - name: daily
+   targetName: dev 
+   schedule: 0 12 * * * 
+   steps:
+     - name: run models
+       command: dbt run --select customer_data
+     - name: run macros
+       command: dbt run-operation apply_masking_policy
+      
+
+    
+    
+
+  
+  
+
+ 
