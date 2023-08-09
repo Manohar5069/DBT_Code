@@ -7,10 +7,10 @@ WITH CUSTOMER_DATA AS (
         {{source('poc','customer_data')}}
 )
 SELECT
-    ID AS CUSTOMER_ID,
+    CUSTOMER_ID,
     FIRST_NAME ,
     LAST_NAME ,
-    EMAIL AS EMAIL_ID, 
+    EMAIL_ID, 
     STREET_ADDRESS,
     CITY ,
     START_DATE 
