@@ -1,19 +1,37 @@
 {{config(materialized = 'table')}} 
 
-WITH SAMPLE_DATA AS (
+WITH SBANATIONAL_DATA AS (
     SELECT
         *
     FROM
-        {{source('poc','sample_data')}}
+         {{source('poc','SBANATIONAL')}}
 )
 SELECT
-    CUSTOMER_ID,
-    FIRST_NAME ,
-    LAST_NAME ,
-    EMAIL_ID, 
-    STREET_ADDRESS,
-    CITY ,
-    START_DATE 
+LoanNr_ChkDgt,
+Name,
+City,
+State,
+Zip,Bank,
+BankState,
+NAICS,
+ApprovalDate,
+ApprovalFY,
+Term,
+NoEmp,
+NewExist,
+CreateJob,
+RetainedJob,
+FranchiseCode,
+UrbanRural,
+RevLineCr,
+LowDoc,
+ChgOffDate,
+DisbursementDate,
+DisbursementGross,
+BalanceGross,
+MIS_Status,
+ChgOffPrinGr,
+GrAppv,
+SBA_Appv  
 FROM
-SAMPLE_DATA   
-
+SBANATIONAL_DATA   
