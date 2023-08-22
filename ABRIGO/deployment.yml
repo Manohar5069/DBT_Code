@@ -1,6 +1,5 @@
 dbtVersion: 1.5.1
 jobs:
-
  - name: daily
    targetName: dev 
    steps:
