@@ -1,10 +1,10 @@
 {{config(materialized = 'table')}} 
 
-WITH SBANATIONAL_DATA AS (
+WITH SBA_NATIONAL_DATA AS (
     SELECT
         *
     FROM
-         {{source('poc','SBANATIONAL')}}
+         {{source('poc','SBA_NATIONAL_DATA')}}
 )
 SELECT
 LoanNr_ChkDgt,
@@ -34,4 +34,4 @@ ChgOffPrinGr,
 GrAppv,
 SBA_Appv  
 FROM
-SBANATIONAL_DATA   
+SBA_NATIONAL_DATA   
