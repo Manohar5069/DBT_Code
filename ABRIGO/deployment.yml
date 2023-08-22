@@ -1,7 +1,7 @@
 dbtVersion: 1.5.1
 jobs:
 
- - name: Daily
+ - name: daily
    targetName: dev 
    steps:
      - name: run models
