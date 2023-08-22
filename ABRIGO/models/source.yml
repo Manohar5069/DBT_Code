@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: poc
-    database: raw_database
-    schema: raw_sh
+    database: ABRIGO
+    schema: RAW_LAYER_SCHEMA
     tables:
-      - name: customer_data
-      - name: sample_data
+      - name: SBANATIONAL
+  
