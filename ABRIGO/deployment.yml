@@ -7,7 +7,7 @@ jobs:
      - name: run models
        command: dbt run 
      - name: run macros
-       command: dbt run-operation apply_masking_policy
+       command: dbt run-operation create_apply_masking_policy
       
 
     
