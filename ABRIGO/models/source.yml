@@ -5,5 +5,5 @@ sources:
     database: ABRIGO
     schema: RAW_LAYER_SCHEMA
     tables:
-      - name: SBANATIONAL
+      - name: SBA_NATIONAL_DATA
   
