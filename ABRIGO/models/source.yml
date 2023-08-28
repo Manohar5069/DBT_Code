@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: poc
-    database: ABRIGO
-    schema: RAW_LAYER_SCHEMA
+  - name: POC
+    database: ABRIGO_DATABASE
+    schema: RAW_LAYER
     tables:
-      - name: SBA_NATIONAL_DATA
+      - name: LOANS_DATA
   
