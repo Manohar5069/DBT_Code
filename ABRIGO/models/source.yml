@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: poc
-    database: ABRIGO_DATABASE
-    schema: RAW_LAYER
-    tables:
-      - name: LOANS_DATA
-  
