@@ -4,5 +4,5 @@ sources:
   - name: ABRIGO_DATABASE
     schema: RAW_LAYER
     tables:
-      - name: LOANS_DATA
+      - name: DEMO_LOANS_SFTP
   
