@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: ABRIGO_DATABASE
+    schema: RAW_LAYER
+    tables:
+      - name: LOANS_DATA
+  
