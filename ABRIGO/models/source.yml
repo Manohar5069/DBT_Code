@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: POC
+  - name: poc
     database: ABRIGO_DATABASE
     schema: RAW_LAYER
     tables:
