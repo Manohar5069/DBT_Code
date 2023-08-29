@@ -4,7 +4,7 @@ WITH LOANS_DATA AS (
     SELECT
         *
     FROM
-         {{source('POC','LOANS_DATA')}}
+         {{source('poc','LOANS_DATA')}}
 )
 
 SELECT 
