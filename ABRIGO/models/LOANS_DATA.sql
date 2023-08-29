@@ -4,7 +4,7 @@ WITH LOANS_DATA AS (
     SELECT
         *
     FROM
-         {{source('poc','LOANS_DATA')}}
+         {{source('ABRIGO_DATABASE','LOANS_DATA')}}
 )
 
 SELECT 
