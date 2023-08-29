@@ -1,10 +1,10 @@
 {{config(materialized = 'table')}} 
 
-WITH LOANS_DATA AS (
+WITH DEMO_LOANS_SFTP AS (
     SELECT
         *
     FROM
-         {{source('ABRIGO_DATABASE','LOANS_DATA')}}
+         {{source('ABRIGO_DATABASE','DEMO_LOANS_SFTP')}}
 )
 
 SELECT 
@@ -45,5 +45,4 @@ PROCESS_DATE,
 _FILE AS FILE_NAME,
 _FIVETRAN_SYNCED
 FROM
-LOANS_DATA 
-WHERE FILE_NAME = '/demo_loans_sftp.csv'
+DEMO_LOANS_SFTP
