@@ -4,7 +4,7 @@ WITH DEMO_LOANS_SFTP AS (
     SELECT
         *
     FROM
-         {{source('ABRIGO_DATABASE','DEMO_LOANS_SFTP')}}
+         {{source('RAW','DEMO_LOANS_SFTP')}}
 )
 
 SELECT 
