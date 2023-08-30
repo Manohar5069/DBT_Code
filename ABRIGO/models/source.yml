@@ -1,11 +1,16 @@
 version: 2
 
 sources:
-  - name: ABRIGO_DATABASE
+  - name: RAW
+    database: ABRIGO_DATABASE
     schema: RAW_LAYER
     tables:
       - name: DEMO_LOANS_SFTP
+
+  - name: TRANSFORM
+    database: ABRIGO_DATABASE
     schema: TRANSFORM_LAYER
     tables:
       - name: DEMO_LOANS_SFTP
+
     
