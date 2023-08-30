@@ -1,10 +1,10 @@
 {{config(materialized = 'table')}} 
 
-WITH DEMO_LOANS_SFTP AS (
+WITH DEMO_LOANS AS (
     SELECT
         *
     FROM
-         {{source('RAW','DEMO_LOANS_SFTP')}}
+         {{source('RAW','DEMO_LOANS')}}
 )
 
 SELECT 
@@ -45,4 +45,4 @@ PROCESS_DATE,
 _FILE AS FILE_NAME,
 _FIVETRAN_SYNCED
 FROM
-DEMO_LOANS_SFTP
+DEMO_LOANS
