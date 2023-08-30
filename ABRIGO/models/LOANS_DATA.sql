@@ -8,7 +8,7 @@ WITH LOANS_DATA AS (
     SELECT
         *
     FROM
-         {{source('TRANSFORM','DEMO_LOANS_SFTP')}}
+         {{source('TRANSFORM','DEMO_LOANS')}}
 )
 
 SELECT 
