@@ -8,7 +8,7 @@ WITH LOANS_DATA AS (
     SELECT
         *
     FROM
-         {{source('ABRIGO_DATABASE','DEMO_LOANS_SFTP')}}
+         {{source('TRANSFORM','DEMO_LOANS_SFTP')}}
 )
 
 SELECT 
