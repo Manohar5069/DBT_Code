@@ -5,12 +5,12 @@ sources:
     database: ABRIGO_DATABASE
     schema: RAW_LAYER
     tables:
-      - name: DEMO_LOANS_SFTP
+      - name: DEMO_LOANS
 
   - name: TRANSFORM
     database: ABRIGO_DATABASE
     schema: TRANSFORM_LAYER
     tables:
-      - name: DEMO_LOANS_SFTP
+      - name: DEMO_LOANS
 
     
