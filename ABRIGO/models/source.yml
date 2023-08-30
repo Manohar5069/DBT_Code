@@ -5,4 +5,7 @@ sources:
     schema: RAW_LAYER
     tables:
       - name: DEMO_LOANS_SFTP
-  
+    schema: TRANSFORM_LAYER
+    tables:
+      - name: DEMO_LOANS_SFTP
+    
